@@ -1,14 +1,19 @@
 {
   "name": "@paraboly/pwc-permission-service",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Paraboly Generic Permission Service",
-  "main": "./lib/src/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "lint": "tslint -p tsconfig.json",
-    "build-test": "tsc & jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "test": "jest --config jestconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "lib/**/*"
