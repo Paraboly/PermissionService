@@ -1,5 +1,5 @@
 {
-  "name": "pwc-permission-service",
+  "name": "@oaraboly/pwc-permission-service",
   "version": "0.0.1",
   "description": "Paraboly Generic Permission Service",
   "main": "index.ts",
