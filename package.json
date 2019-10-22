@@ -9,6 +9,9 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Paraboly/PermissionService.git"
