@@ -59,6 +59,7 @@ Please check the permission architecture about the permission of the each type.
 const {
   decodeSelectedPermission
 } = PermissionService;
+
 const module = decodeSelectedPermission(1, permission);
 const page = decodeSelectedPermission(2, permission);
 const permissionValue = decodeSelectedPermission(
