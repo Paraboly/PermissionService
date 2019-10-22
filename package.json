@@ -4,6 +4,9 @@
   "description": "Paraboly Generic Permission Service",
   "main": "index.ts",
   "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/Paraboly/PermissionService/issues"
   },
-  "homepage": "https://github.com/Paraboly/PermissionService#readme"
+  "homepage": "https://github.com/Paraboly/PermissionService#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
+  }
 }
