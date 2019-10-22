@@ -1,8 +1,8 @@
 {
   "name": "@paraboly/pwc-permission-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Paraboly Generic Permission Service",
-  "main": "index.ts",
+  "main": "./lib/src/index.js",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
