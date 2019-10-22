@@ -11,13 +11,6 @@
 ![Platform - Platform Free Web](https://img.shields.io/badge/-Web%20%7C%20Platform%20Free-blue?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-
-## Installation
-
-```js
-npm i @paraboly/pwc-permission-service
-```
-
 # Architecture of Using Permission Service
 
 | Types            | Values | Example    | Example2      |
@@ -28,6 +21,12 @@ npm i @paraboly/pwc-permission-service
 | COMPONENT        | 3      | *          | button        |
 | COMPONENT ID     | 4      | *          | delete_button |
 | PERMISSION VALUE | 5      | 7          | 0             |
+
+## Installation
+
+```js
+npm i @paraboly/pwc-permission-service
+```
 
 # Usage
 
