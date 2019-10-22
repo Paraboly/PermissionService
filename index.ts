@@ -1,7 +1,13 @@
-class PermissionService {
-  encodedPermission: string = null;
-  permissionObj: Object = {};
+import {
+  NAMESPACE,
+  MODULE,
+  PAGE,
+  COMPONENT,
+  COMPONENT_ID,
+  PERMISSION_VALUE
+} from "./constants";
 
+class PermissionService {
   /**
    * @param (string) encoded permission
    * ? Encoded Permission Param Example:
@@ -48,6 +54,36 @@ class PermissionService {
   ) {
     return `[${namespace}][${module}][${page}][${component}][${component_id}][${permission}]`;
   }
+
+  /**
+   * @param (string) type
+   * @param (string) encoded permission
+   * Decode to each permission value to receive and use each of them separately
+   */
+  decodeEachPermission = (
+    type: string = PERMISSION_VALUE,
+    permission: string
+  ) => {
+    // Split permissions to get permission levels
+    const permissionLevels = permission.split(".");
+
+    switch (type) {
+      case NAMESPACE:
+        return permissionLevels[0];
+      case MODULE:
+        return permissionLevels[1];
+      case PAGE:
+        return permissionLevels[2];
+      case COMPONENT:
+        return permissionLevels[3];
+      case COMPONENT_ID:
+        return permissionLevels[4];
+      case PERMISSION_VALUE:
+        return permissionLevels[5];
+      default:
+        return permissionLevels[5];
+    }
+  };
 }
 
 export default new PermissionService();
