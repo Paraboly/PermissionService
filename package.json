@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/pwc-permission-service",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Paraboly Generic Permission Service",
   "main": "./lib/src/index.js",
   "scripts": {
