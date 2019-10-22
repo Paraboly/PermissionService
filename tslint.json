@@ -6,6 +6,7 @@
   },
   "jsRules": {
     "object-literal-sort-keys": false,
-    "ordered-imports": false
+    "ordered-imports": false,
+    "interface-over-type-literal": false
   }
 }
