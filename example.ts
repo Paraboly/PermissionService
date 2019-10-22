@@ -1,0 +1,1 @@
+import PermissionService from "./index";
