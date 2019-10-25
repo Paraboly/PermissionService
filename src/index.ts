@@ -70,6 +70,51 @@ class PermissionService {
     if (type === 5) return Number(permissionLevels[type]);
     return permissionLevels[type];
   };
+
+  /**
+   *
+   * @param permission is the number of permission value
+   */
+  public hasRead = (permission: number) => {
+    if (
+      permission === 1 ||
+      permission === 3 ||
+      permission === 5 ||
+      permission === 7
+    )
+      return true;
+    return false;
+  };
+
+  /**
+   *
+   * @param permission is the number of permission value
+   */
+  public hasWrite = (permission: number) => {
+    if (
+      permission === 2 ||
+      permission === 3 ||
+      permission === 6 ||
+      permission === 7
+    )
+      return true;
+    return false;
+  };
+
+  /**
+   *
+   * @param permission is the number of permission value
+   */
+  public hasExecute = (permission: number) => {
+    if (
+      permission === 4 ||
+      permission === 5 ||
+      permission === 6 ||
+      permission === 7
+    )
+      return true;
+    return false;
+  };
 }
 
 export default new PermissionService();
